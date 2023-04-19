@@ -1,0 +1,15 @@
+User stories:
+
+* As a lender, I want to calculate the monthly debt-to-income ratio so that we can assess the borrower's ability to repay the loan.
+D:I
+Debt-to-income (DTI) ratio: A comparison of how much you owe to how much you earn per month. To calculate the DTI ratio, first add all your recurring monthly debts, such as those for rent, a mortgage, credit cards, and car payments. Then divide the total recurring monthly debt by the gross monthly income.
+recurring debt / monthly income
+
+  * Given that I want to calculate the monthly debt-to-income ratio, when the monthly debt is less than zero or the monthly income is equal to or less than zero, then the application should raise an error.
+if D < 0 or I =< 0, then error
+* As a lender, I want to calculate the loan-to-value ratio so that we can evaluate the risk of lending money to the borrower.
+L:V
+L/appraised value
+Loan-to-value (LTV) ratio: A ratio that lenders use to evaluate risk and decide whether to charge a higher interest rate and additional fees. The LTV ratio compares the amount of the loan that you're asking for to the appraised value of the item that you want to buy. To calculate this ratio, divide the loan amount by the appraised value of the asset that’s securing the loan. A home or any other real-estate property is commonly used as an asset to secure the loan.
+  * Given that I want to calculate the loan-to-value ratio, when the loan amount or the home value are equal to zero, then the application should raise an error.
+L or HV = 0 , then error
